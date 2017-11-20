@@ -1,0 +1,61 @@
+<!-- 
+Replace ##DeviceId## with your actual device ID
+Replace ##DeviceToken## with your actual access token
+-->
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Fan Control Form</title>
+  </head>
+    <style>
+      input[type=submit] {
+        width: 50%;
+        font-size: 1.5em;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+      input[type=submit]:hover {
+        background-color: #45a049;
+        }
+      div {
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-size: 1.5em;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+      </style>
+        <body>
+          <center>
+            <div>
+            <br>
+<!--  
+  <form action="https://api.particle.io/v1/devices/##DeviceId##
+/FanControl?access_token=##DeviceToken##" method="POST">
+-->
+              <form action="https://api.particle.io/v1/devices/36002b000b47343432313031
+/FanControl?access_token=ea1d35c557c43706e2a25d81db6d5accb509c74c" method="POST">
+
+                <H1>What Command Do You Want to Send?</H1>
+                <br>
+                <input type="radio" name="args" value="on">Turn ON the Fan
+                <br>
+                <br>
+                <input type="radio" name="args" value="off">Turn OFF the Fan
+                <br>
+                <br>
+                <input type="radio" name="args" value="toggle">Toggle ON/OFF the Fan
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </center>
+        </body>
+</html>
