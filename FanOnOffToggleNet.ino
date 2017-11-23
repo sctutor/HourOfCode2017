@@ -1,3 +1,14 @@
+/***********************************************************
+ * Particle API Control of Mini-Fan
+ * By Mike Leonard
+ * By using a simple web form or If This Then That (IFTTT) we can remotely
+ * control a Particle Photon with and Mini-Fan connected on pin D2.
+ * To simplfy the code we have a TOGGLE function in addtion to ON and OFF functions
+ * When you press the DO BUTTON the Mini-Fan goes to the opposite state (ON/OFF)
+ * The Photon internal LED on pin D7 does the same thing
+ * *********************************************************/
+
+
 //Assign variable names to Photon pin numbers
 int FanOut = D2;
 int IntLedOut = D7;
