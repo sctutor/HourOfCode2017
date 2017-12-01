@@ -13,8 +13,8 @@ Rock Hill, SC 29730
 * If This Then That (IFTTT) - Photon communication with other web services
 
 ### Schedule
-8:30 AM - 10:20 AM: 7th Grade
-11:46 AM - 1:24 PM:  6th Grade
+8:30 AM - 10:20 AM: 7th Grade  
+11:46 AM - 1:24 PM:  6th Grade  
 
 ### Point of Contact
 David Consalvi
