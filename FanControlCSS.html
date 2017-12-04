@@ -2,11 +2,60 @@
 Replace ##DeviceId## with your actual device ID
 Replace ##DeviceToken## with your actual access token
 -->
+<!--
+maker1
+  ##DeviceId## - 3a0030000c47343233323032
+  ##DeviceToken## - 20358363ab05325a2d0d3f5061fcf76a765bdcbb
+
+<form action="https://api.particle.io/v1/devices/3a0030000c47343233323032
+/FanControl?access_token=20358363ab05325a2d0d3f5061fcf76a765bdcbb" method="POST">
+
+maker2  
+  ##DeviceId## - 19002d000847353138383138
+  ##DeviceToken## - 1e4de4fa9514bfd12e00aa9408a71abac3fffee8
+
+<form action="https://api.particle.io/v1/devices/19002d000847353138383138
+/FanControl?access_token=1e4de4fa9514bfd12e00aa9408a71abac3fffee8" method="POST">
+
+maker3  
+  ##DeviceId## - 1c002f001347353136383631
+  ##DeviceToken## - b99732a2e40246639c33f0ac447540f50c7eba2e
+
+<form action="https://api.particle.io/v1/devices/1c002f001347353136383631
+/FanControl?access_token=b99732a2e40246639c33f0ac447540f50c7eba2e" method="POST">
+
+maker4  
+  ##DeviceId## - 1c0024000d47353136383631
+  ##DeviceToken## - e5bf9b2fdc2db3a357e038a9df594bbd8049734a
+
+<form action="https://api.particle.io/v1/devices/1c0024000d47353136383631
+/FanControl?access_token=e5bf9b2fdc2db3a357e038a9df594bbd8049734a" method="POST">
+
+maker5  
+  ##DeviceId## - 280025001447353136383631
+  ##DeviceToken## - 877eac3f35ddc4110b990a70c84c60de44482073
+
+<form action="https://api.particle.io/v1/devices/280025001447353136383631
+/FanControl?access_token=877eac3f35ddc4110b990a70c84c60de44482073" method="POST">
+
+maker6  
+  ##DeviceId## - 34001a000e47353136383631
+  ##DeviceToken## - 66bb9f0999666ef263a447d9546e2b1b6cd7a912
+
+<form action="https://api.particle.io/v1/devices/34001a000e47353136383631
+/FanControl?access_token=66bb9f0999666ef263a447d9546e2b1b6cd7a912" method="POST">
+
+sctutor  
+  ##DeviceId## - 36002b000b47343432313031
+  ##DeviceToken## - ea1d35c557c43706e2a25d81db6d5accb509c74c
+-->
+
 <!DOCTYPE>
 <html>
   <head>
     <title>Fan Control Form</title>
   </head>
+<!-- Comment out CSS styling
     <style>
       input[type=submit] {
         width: 50%;
@@ -27,9 +76,14 @@ Replace ##DeviceToken## with your actual access token
         font-family: sans-serif;
         font-size: 1.5em;
         background-color: #f2f2f2;
+        color: blue;
         padding: 20px;
         }
+      h1 {
+        color: #4CAF50;
+        }
       </style>
+-->
         <body>
           <center>
             <div>
@@ -41,7 +95,7 @@ Replace ##DeviceToken## with your actual access token
               <form action="https://api.particle.io/v1/devices/36002b000b47343432313031
 /FanControl?access_token=ea1d35c557c43706e2a25d81db6d5accb509c74c" method="POST">
 
-                <H1>What Command Do You Want to Send?</H1>
+                <h1>What Command Do You Want to Send?</h1>
                 <br>
                 <input type="radio" name="args" value="on">Turn ON the Fan
                 <br>
